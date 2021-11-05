@@ -1,0 +1,31 @@
+{
+  "cwd": "C:\\Users\\Dorian\\Documents\\Ecole 2021 2022\\Cordova",
+  "type": [
+    "cordova"
+  ],
+  "name": "My App",
+  "framework": "core",
+  "template": "tabs",
+  "bundler": false,
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": true,
+    "color": "#9602e7",
+    "darkTheme": true,
+    "iconFonts": true,
+    "fillBars": true
+  },
+  "customBuild": false,
+  "pkg": "io.framework7.myapp",
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "android"
+    ],
+    "plugins": [
+      "cordova-plugin-statusbar",
+      "cordova-plugin-keyboard",
+      "cordova-plugin-splashscreen"
+    ]
+  }
+}

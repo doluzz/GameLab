@@ -1,0 +1,1 @@
+//https://api.rawg.io/api/platforms?key=5b38613725994eb09004251c11250686
