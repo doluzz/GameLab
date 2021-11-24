@@ -1,5 +1,18 @@
-<template>
-  <div class="page" data-name="catalog">
+<html>
+  <div>
+    <input type = "button" onclick = "request()" value = "Display">
+  </div>
+</html>
+
+<script>
+  import { request } from 'framework7';
+
+request.get('catalog.html')
+</script>
+<script src="api.js"></script>  
+
+<!-- <template>
+    <div class="page" data-name="catalog">
     <div class="navbar">
       <div class="navbar-bg"></div>
       <div class="navbar-inner sliding">
@@ -38,3 +51,4 @@
   }
 
 </script>
+-->
