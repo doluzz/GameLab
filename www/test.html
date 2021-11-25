@@ -10,25 +10,32 @@
           </a>
       </div>
     </div>
+
+
     <div class="page-content">
-      <div class="list">
-        <form class="searchbar">
-          <div class="searchbar-inner">
-            <div class="searchbar-input-wrap">
-              <input type="search" placeholder="Platforms" id="poiu"/>
-              <p class="row">
-                <button class="col button button-raised" onclick="choiceGame()">Liste jeux</button>
-                <button class="col button button-raised" onclick="connection('support')">All Support</button>
-              </p>
-            </div>
-          </div>
-        </form>
-    </div>
-            <div>
+
+      <!-- Platforms Check -->
+      
+      <div class="list inset">
+            <a class="item-link smart-select smart-select-init">
+              <select name="Platforms" id="PlatformSelect">
+                <option value="Playstation 4" selected>Playstation 4</option>
+                <option value="Nintendo Switch">Nintendo Switch</option>
+                <option value="Xbox One">Xbox One</option>
+                <option value="PC">PC</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Platforms</div>
+                </div>
+              </div>
+            </a>
+        
+          
+            <div class="list media-list">
               <div class="block-title">Games</div>
-              <div class="list media-list">
                 <ul>
-                  <!-- Games Display -->
+                      <!-- Games Display -->
                   <li>
                     <a href="#" class="item-content">
                       <div class="item-media">
@@ -36,7 +43,7 @@
                       </div>
                       <div class="item-inner">
                         <div class="item-title-row">
-                          <div class="item-title">SSBU</div>
+                          <div class="item-title">Super Smash Bros Ultimate</div>
                         </div>
                         <div class="item-subtitle">Nintendo Switch</div>
                       </div>
@@ -45,6 +52,9 @@
                 </ul>
               </div>
             </div>
+        
+        
+
     </div>
   </div>
 </template>
