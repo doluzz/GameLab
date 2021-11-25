@@ -5,8 +5,16 @@ var routes = [
     url: './index.html',
   },
   {
-    path: '/test',
-    url: './test.html',
+    path: '/test/',
+    componentUrl: './pages/test.html',
+    on: {
+      pageAfterIn: function(e , page){
+        var router = this;
+        var app = router.app;
+        console.log("marche")
+        newCall(app)
+      }
+    },
   },
   {
     path: '/about/',
@@ -86,3 +94,5 @@ var routes = [
     url: './pages/404.html',
   },
 ];
+
+
