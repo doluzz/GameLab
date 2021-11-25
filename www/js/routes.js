@@ -5,8 +5,8 @@ var routes = [
     url: './index.html',
   },
   {
-    path: '/test',
-    url: './test.html',
+    path: '/test/',
+    componentUrl: './test.html',
   },
   {
     path: '/about/',

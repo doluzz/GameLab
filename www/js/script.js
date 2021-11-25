@@ -5,7 +5,7 @@ function connection(params, theGame) {
   request.onload = function () {
     // Begin accessing JSON data here
     var data = JSON.parse(this.response)
-
+    
     if (request.status >= 200 && request.status < 400) {
       console.log(data)
       if (params == "support") {
@@ -13,7 +13,7 @@ function connection(params, theGame) {
         for (i = 0; i < data.results.length; i++) {
           //console.log(data.results[i])
           if (data.results[i].name === theGame) {
-            $('<button class="prout" onclick="games(' + "'" + [i] + "'" + ')" >' + data.results[i].name + '</button>').appendTo('body');
+            $('<button class="col button button-raised" onclick="games(' + "'" + [i] + "'" + ')" >' + data.results[i].name + '</button>').appendTo('row');
           }
         }
       }
@@ -40,7 +40,7 @@ function games(nomGame) {
       image(data.results[nomGame].image_background)
         for (i = 0; i < data.results[nomGame].games.length; i++) {
           console.log(data.results[nomGame].games[i])
-          $('<div/>').text(data.results[nomGame].games[i].name).appendTo('body');
+          $('<div/>').text(data.results[nomGame].games[i].name).appendTo('row');
 
         }
     } else {
@@ -58,6 +58,7 @@ function image(url) {
 }
 
 function choiceGame() {
+  console.log('15')
   var val = document.getElementById("poiu").value
   console.log(val)
   connection("support", val)

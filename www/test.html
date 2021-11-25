@@ -1,23 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-
-    <title>Page de test</title>
-    <div>Yo</div>
-    <div>
-      <input type="text" placeholder="Game" id="poiu"/>
-      <button onclick="choiceGame()">Liste jeux</button>
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding"></div>
+      <div class="left">
+          <a href="#" class="link back"> 
+            <i class="icon icon-back"></i>
+            <span class="if-not-md">Back</span>
+          </a>
+      </div>
     </div>
-
-    <link href="css/test.css" rel="stylesheet" />
-
-  </head>
-
-  <body>
-    <button onclick="connection('support')">All Support</button>
-  </body>
-</html>
+    <div class="page-content">
+      <div class="list">
+        <form class="searchbar">
+          <div class="searchbar-inner">
+            <div class="searchbar-input-wrap">
+              <input type="search" placeholder="Platforms" id="poiu"/>
+              <p class="row">
+                <button class="col button button-raised" onclick="choiceGame()">Liste jeux</button>
+                <button class="col button button-raised" onclick="connection('support')">All Support</button>
+              </p>
+            </div>
+          </div>
+        </form>
+    </div>
+            <div>
+              <div class="block-title">Games</div>
+              <div class="list media-list">
+                <ul>
+                  <!-- Games Display -->
+                  <li>
+                    <a href="#" class="item-content">
+                      <div class="item-media">
+                        <img data-src="../250px-Mega_Man_SSBU.png" class="lazy"/>
+                      </div>
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">SSBU</div>
+                        </div>
+                        <div class="item-subtitle">Nintendo Switch</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    </div>
+  </div>
+</template>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src = "js/script.js">
 
