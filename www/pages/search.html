@@ -1,0 +1,60 @@
+<template>
+  <div class="page" data-name="search">
+      <div class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner sliding"></div>
+            <div class="title">Search</div>
+          <div class="left">
+              <a href="#" class="link back"> 
+                <i class="icon icon-back"></i>
+                <span class="if-not-md">Back</span>
+              </a>
+          </div>
+      </div>
+      <div class="page-content">
+
+        </div>
+            <!-- <div>
+              <div class="block-title">Games</div>
+              <div class="list media-list">
+                <ul>
+                  <li>
+                    <a href="#" class="item-content">
+                      <div class="item-media">
+                        <img data-src="../220px-Super_Smash_Bros._Ultimate.png" class="lazy"/>
+                      </div>
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">Super Smash Bros Brawl</div>
+                        </div>
+                        <div class="item-subtitle">Nintendo</div>
+                        <a class="button popup-open" data-popup=".popup-swipe-to-close" href="">Go</a>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+            <div class="popup popup-swipe-to-close">
+              <div class="card ximg">
+                <div class="card-header">Super Smash Bros Brawl</div>
+                <div class="card-content"><img data-src="../250px-Mega_Man_SSBU.png" class="lazy"/></div>
+                <div class="card-footer">NICE</div>
+                <img data-src="../250px-Mega_Man_SSBU.png" class="lazy"/>
+              </div>
+            </div>
+      </div>
+  </div>
+</template>
+<script>
+  export default  (props, { $f7, $, $on }) =>{
+    $on('pageInit', () => {
+      var swipeToClosePopup = $f7.popup.create({
+        el: '.popup-swipe-to-close',
+        swipeToClose: true,
+      });
+
+    });
+    return $render;
+  }
+</script>

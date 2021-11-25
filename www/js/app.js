@@ -28,7 +28,7 @@ var app = new Framework7({
       var f7 = this;
       if (f7.device.cordova) {
         // Init cordova APIs (see cordova-app.js)
-        cordovaApp.init(f7);
+        cordovaApp.init(f7); 
       }
     },
   },

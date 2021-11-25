@@ -30,6 +30,14 @@ var routes = [
     componentUrl: './pages/dynamic-route.html',
   },
   {
+    path: '/profile/',
+    url :'./pages/profile.html'
+  },
+  {
+    path :'/search/',
+    componentUrl :'./pages/search.html',
+  },
+  {
     path: '/request-and-load/user/:userId/',
     async: function ({ router, to, resolve }) {
       // App instance
